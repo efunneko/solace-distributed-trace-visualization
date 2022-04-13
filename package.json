@@ -4,18 +4,19 @@
   "description": "Starting point for a simple jayesstee app",
   "main": "src/index.js",
   "scripts": {
+    "watch": "npx webpack serve --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/efunneko/jayesstee-starter.git"
+    "url": "git+https://github.com/efunneko/solace-distributed-trace-visualization.git"
   },
   "author": "Edward Funnekotter <efunneko@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/efunneko/jayesstee-starter/issues"
+    "url": "https://github.com/efunneko/solace-distributed-trace-visualization/issues"
   },
-  "homepage": "https://github.com/efunneko/jayesstee-starter#readme",
+  "homepage": "https://github.com/efunneko/solace-distributed-trace-visualization#readme",
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.66.0",
@@ -24,6 +25,8 @@
   },
   "dependencies": {
     "jayesstee": "^0.13.0",
-    "navigo": "^8.11.1"
+    "mqtt": "^4.3.7",
+    "navigo": "^8.11.1",
+    "protobufjs": "^6.11.2"
   }
 }

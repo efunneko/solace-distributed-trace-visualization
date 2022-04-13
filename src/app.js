@@ -1,5 +1,6 @@
 import {jst}                   from "jayesstee";
 import {Body}                  from "./body";
+import {Tracing}               from "./tracing";
 
 const DEBUG_MODE = true;
 
@@ -20,6 +21,8 @@ export class App extends jst.Component {
     // Listen for window resize events
     window.onresize = e => this.resize();
 
+    this.start();
+
   }
  
   render() {
@@ -37,6 +40,15 @@ export class App extends jst.Component {
       this.body.resize(this.width, this.height);
       this.refresh();
     }, 100);
+  }
+
+  start() {
+    // Create the tracing object
+    this.tracing = new Tracing(this);
+
+    // Start the tracing object
+    this.tracing.start();
+
   }
 
 
