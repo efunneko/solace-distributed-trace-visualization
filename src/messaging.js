@@ -93,7 +93,7 @@ export class Messaging {
   }
 
   rxMessage(topic, msg) {
-    console.log("rxMessage", topic, msg)
+    // console.log("rxMessage", topic, msg)
     let cbs = this.getMessageCallbacks(topic);
 
     cbs.forEach(cb => cb(topic, msg));

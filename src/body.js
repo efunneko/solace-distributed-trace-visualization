@@ -83,7 +83,6 @@ export class Home extends jst.Component {
         events: {
         },
       },
-      "Hello, World!"
       );
   }
 
